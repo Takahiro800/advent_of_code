@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "**/debug/": true,
+    "**/target/": true,
+    "**/Cargo.lock": true,
+    "**/*.rs.bk": true,
+    "*.pdb": true
+  },
+  "search.exclude": {
+    "**/debug/": true,
+    "**/target/": true,
+    "**/Cargo.lock": true,
+    "**/*.rs.bk": true,
+    "*.pdb": true
+  }
+}
