@@ -61,9 +61,7 @@ impl Solve for Solution {
     type Answer1 = u64;
     type Answer2 = u64;
 
-    fn new() -> Self {
-        let input = include_str!("../input.txt");
-        // let input = include_str!("../sample.txt");
+    fn new(input: &str) -> Self {
         let lines: Vec<&str> = input.lines().collect();
 
         Self {
@@ -98,6 +96,18 @@ impl Solve for Solution {
 }
 
 fn main() {
-    let solution = Solution::new();
+    let input = include_str!("../input.txt");
+    let solution = Solution::new(input);
     println!("Part 2: {}", solution.part2());
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_part2() {
+        let input = include_str!("../sample.txt");
+        assert_eq!(Solution::new(input).part2(), 6)
+    }
 }
