@@ -1,4 +1,4 @@
 init:
 	@echo "Creating day ${DAY}..."
 	touch src/bin/day$(DAY).rs
-	touch input/day$(DAY).txt sample/day$(DAY).txt
+	touch input/$(DAY).txt sample/$(DAY).txt
